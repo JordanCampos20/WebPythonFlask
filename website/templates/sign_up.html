@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}Registrar{% endblock %}
+
+{% block content %}
+<form method="POST">
+    <h3 align="center">Registrar</h3>
+    <div class="input-boxes">
+        <div class="input-box">
+          <i class="fas fa-user"></i>
+          <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Digite Seu Nome" required>
+        </div>
+        <div class="input-box">
+          <i class="fas fa-envelope"></i>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Digite Seu Email" required>
+        </div>
+        <div class="input-box">
+          <i class="fas fa-lock"></i>
+          <input type="password" class="form-control" id="password1" name="password1" placeholder="Digite Sua Senha" required>
+        </div>
+        <div class="input-box">
+            <i class="fas fa-lock"></i>
+            <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirme Sua Senha" required>
+            <input type="checkbox" onclick="myFunction1()">Mostrar a Senha
+          </div>
+        <div class="button input-box">
+          <input type="submit" value="Registrar">
+        </div>
+        <div class="text sign-up-text">Você Já Possui Uma Conta? <label><a href="/login">Entrar Agora</a></label></div>
+      </div>
+</form>
+{% endblock %}

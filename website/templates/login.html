@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}Entrar{% endblock %}
+
+{% block content %}
+<form method="POST">
+    <h3 align="center">Entrar</h3>
+    <div class="input-boxes">
+        <div class="input-box">
+          <i class="fas fa-envelope"></i>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Digite Seu Email" required>
+        </div>
+        <div class="input-box">
+          <i class="fas fa-lock"></i>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Digite Sua Senha" required>
+          <input type="checkbox" onclick="myFunction()">Mostrar a Senha
+        </div>
+        <div class="text"><a href="#">Esqueceu Sua Senha?</a></div>
+        <div class="button input-box">
+          <input type="submit" value="Entrar">
+        </div>
+        <div class="text sign-up-text">Você Não Possui Uma Conta?<label><a href="/sign-up">Registre Agora</a></label></div>
+      </div>
+  </form>
+{% endblock %}
